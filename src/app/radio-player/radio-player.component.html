@@ -1,0 +1,27 @@
+
+<div class="container">
+  <mat-toolbar color="primary" class="main-toolbar">
+    <span>Web Radio</span>
+  </mat-toolbar>
+
+  <div class="content">
+    <div class="logo">
+<!--      <mat-icon>music_note</mat-icon>-->
+      <img alt="radio bob" height="100px" src="radiobob.png" />
+      <div>Radio BOB!</div>
+    </div>
+  </div>
+  <div class="media-footer">
+    <mat-toolbar color="primary">
+      <mat-toolbar-row class="media-action-bar">
+        <button mat-button (click)="play()">
+          <mat-icon fontIcon="play_circle_filled"></mat-icon>
+        </button>
+        <button mat-button (click)="stop()">
+          <mat-icon fontIcon="stop_circle_filled"></mat-icon>
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+
+</div>
