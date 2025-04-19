@@ -44,6 +44,10 @@ export class AudioService {
   }
 
   stop() {
+    this.audioObj.pause();
+    this.audioObj.currentTime = 0;
+    // remove event listeners
+    //this.removeEvents(this.audioObj, this.audioEvents, handler);
     //this.stop$.next();
   }
 

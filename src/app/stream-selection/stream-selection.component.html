@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="content">
+    <div
+      class="scroll-wrapper"
+      (wheel)="onWheel($event, scroller)"
+      #scroller
+      role="list"
+      aria-label="Horizontally scrolling gallery">
+      <figure
+        class="item"
+        role="listitem"
+        *ngFor="let item of items"
+        (keyup.enter)="onItemClick(item)"
+        (click)="onItemClick(item)">
+        <img [src]="item.imgSrc" [alt]="item.label" />
+        <figcaption>{{ item.label }}</figcaption>
+      </figure>
+    </div>
+<!--    <div class="logo">-->
+<!--      <img alt="radio bob" height="100px" src="radiobob.png" />-->
+<!--      <div>Radio BOB!</div>-->
+<!--    </div>-->
+  </div>
+</div>
